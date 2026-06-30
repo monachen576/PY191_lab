@@ -1,3 +1,4 @@
+# '''
 # Activity 1
 for i in range(10): 
     print(i, end=' ') if i%2==1 else None
@@ -20,3 +21,11 @@ for i in range(1, 26):
     if (i % 4 == 0): print("Quack", end='')
     if (i % 6 == 0): print("Moo", end='')
     print()
+
+print()
+# '''
+# Activity 4
+def factorial(n):
+    if (n==1): return 1
+    return n * factorial(n-1)
+print(factorial(int(input())))
