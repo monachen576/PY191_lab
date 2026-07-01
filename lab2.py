@@ -56,10 +56,12 @@ def main(screen):
         elif key == curses.KEY_LEFT:
             if (cursor>0): 
                 cursor -= 1
+
     # right arrow
         elif key == curses.KEY_RIGHT:
             if (cursor < len(text)): 
                 cursor += 1
+                
     # backspace
         elif key in (8, 127, curses.KEY_BACKSPACE):
             text = text[0:cursor] + text[cursor+1:]
